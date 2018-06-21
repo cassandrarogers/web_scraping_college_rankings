@@ -1,0 +1,43 @@
+# import custom functions
+from GitHub_RankingsScraperShell import GetRankings
+
+#Scrape data from US News Best Colleges and export as CSV file
+BestColleges = GetRankings('US_News_Best_Colleges', url ='https://www.usnews.com/best-colleges/njit-2621/overall-rankings')
+
+#print the dataframe
+BestColleges
+
+
+
+
+#Scrape data from US News Graduate Schools and export as CSV file
+Grad_Rankings = GetRankings('US_News_Graduate_Schools', url ='https://www.usnews.com/best-graduate-schools/georgia-institute-of-technology-139755/overall-rankings')
+
+#print the dataframe
+Grad_Rankings
+
+
+
+
+#Scrape data from US News Online Programs and export as CSV file
+OnlineProg_Rankings = GetRankings('US_News_Online_Programs', url ='https://www.usnews.com/education/online-education/northeastern-university-167358/rankings')
+
+#print the dataframe
+OnlineProg_Rankings
+
+
+
+
+#Scrape data from Forbes and export as CSV file
+ForbesRankings = GetRankings('Forbes')
+
+#print the dataframe
+ForbesRankings
+
+
+
+
+#Scrape data from PayScale College Salary and export as CSV file
+PayScaleRankings = GetRankings('PayScale_College_Salary_Report', limit = 10)
+#print the dataframe
+PayScaleRankings 
